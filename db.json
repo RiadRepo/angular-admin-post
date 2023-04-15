@@ -1,0 +1,46 @@
+{
+  "post": [
+    {
+      "id": 3,
+      "title": "Product 3",
+      "content": "Description 3",
+      "approved": true
+    },
+    {
+      "title": "tyrty",
+      "content": "tytryrt",
+      "approved": true,
+      "id": 6
+    },
+    {
+      "title": "gdfgf",
+      "content": "fgdfg",
+      "approved": true,
+      "id": 8
+    },
+    {
+      "title": "gdfgf",
+      "content": "fhsfhfh",
+      "approved": true,
+      "id": 9
+    },
+    {
+      "title": "tytry",
+      "content": "rtyrtyrty",
+      "approved": true,
+      "id": 10
+    },
+    {
+      "title": "jhkjh",
+      "content": "jhkjh",
+      "approved": false,
+      "id": 11
+    },
+    {
+      "title": "uyiyui",
+      "content": "yuiyuiyu",
+      "approved": false,
+      "id": 12
+    }
+  ]
+}

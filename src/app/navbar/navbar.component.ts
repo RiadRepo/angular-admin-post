@@ -1,0 +1,26 @@
+import { Component } from '@angular/core';
+import { MenuItem } from 'primeng/api';
+
+@Component({
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css'],
+})
+export class NavbarComponent {
+  items: MenuItem[] = [];
+
+  ngOnInit() {
+    this.items = [
+      {
+        label: 'Home',
+        routerLink: '/',
+        icon: 'pi pi-home',
+      },
+      {
+        label: 'Admin',
+        routerLink: '/admin',
+        icon: 'pi pi-info-circle',
+      },
+    ];
+  }
+}

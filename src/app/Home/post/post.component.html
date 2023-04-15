@@ -1,0 +1,32 @@
+<form [formGroup]="myForm">
+  <p-card>
+    <div class="flex flex-column gap-2">
+      <label htmlFor="title">Title</label>
+      <input
+        pInputText
+        id="title"
+        aria-describedby="title-help"
+        formControlName="title"
+      />
+    </div>
+    <div class="flex flex-column gap-2">
+      <label htmlFor="content">Story</label>
+
+      <textarea
+        rows="5"
+        cols="100"
+        pInputTextarea
+        formControlName="content"
+      ></textarea>
+    </div>
+
+    <div class="card flex justify-content-center">
+      <button
+        pButton
+        label="Submit"
+        icon="pi pi-check"
+        (click)="onSubmit()"
+      ></button>
+    </div>
+  </p-card>
+</form>
