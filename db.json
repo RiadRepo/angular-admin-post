@@ -33,14 +33,8 @@
     {
       "title": "jhkjh",
       "content": "jhkjh",
-      "approved": false,
+      "approved": true,
       "id": 11
-    },
-    {
-      "title": "uyiyui",
-      "content": "yuiyuiyu",
-      "approved": false,
-      "id": 12
     }
   ]
 }

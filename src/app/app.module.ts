@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostServiceComponent } from './services/post-service/post-service.component';
 import { ConfirmationService } from 'primeng/api';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
-
+import { TableModule } from 'primeng/table';
 import { MessageService } from 'primeng/api';
 
 @NgModule({
@@ -49,6 +49,7 @@ import { MessageService } from 'primeng/api';
     HttpClientModule,
     ReactiveFormsModule,
     ConfirmDialogModule,
+    TableModule,
   ],
   providers: [PostServiceComponent, ConfirmationService, MessageService],
   bootstrap: [AppComponent],

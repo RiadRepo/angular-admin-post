@@ -1,4 +1,54 @@
-<div class="card">
+<p-table [value]="posts" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Approve</th>
+      <th>Remove</th>
+      <!-- <th>Edit</th> -->
+      <th>Status</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-post>
+    <tr>
+      <td>{{ post.id }}</td>
+      <td>{{ post.title }}</td>
+      <td>{{ post.content }}</td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-sm btn-success"
+          (click)="approvePost(post)"
+        >
+          Approve
+        </button>
+      </td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-sm btn-danger"
+          (click)="deletePost(post)"
+        >
+          Removed
+        </button>
+      </td>
+      <!-- <td><button
+        type="button"
+        class="btn btn-sm btn-danger"
+        (click)="editPost(post)"
+      >
+        Edit
+      </button></td> -->
+      <td>
+        <span *ngIf="post.approved" class="approved">Approved</span>
+        <span *ngIf="!post.approved" class="pending">Pending</span>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<!-- <div class="card">
   <h1>Post Approval Panel</h1>
   <div *ngFor="let post of posts">
     <tr>
@@ -32,8 +82,8 @@
         </button>
       </td>
     </tr>
-  </div>
-  <!-- <p-treeTable
+  </div> -->
+<!-- <p-treeTable
     [value]="files"
     [columns]="cols"
     [scrollable]="true"
@@ -62,9 +112,9 @@
                 </td>
             </tr>
         </ng-template> -->
-  <!-- <ng-template pTemplate="summary">
+<!-- <ng-template pTemplate="summary">
             <div style="text-align:left">
                 <p-button icon="pi pi-refresh" label="Reload"></p-button>
             </div>
         </ng-template> -->
-</div>
+<!-- </div> -->

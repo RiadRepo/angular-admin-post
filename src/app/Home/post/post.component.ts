@@ -10,21 +10,6 @@ import { PostServiceComponent } from 'src/app/services/post-service/post-service
 export class PostComponent {
   value: string = '';
 
-  // displayModal: boolean = false;
-
-  // showDialog() {
-  //   this.displayModal = true;
-  // }
-
-  // hideDialog() {
-  //   this.displayModal = false;
-  // }
-
-  // save() {
-  //   // Perform save operation
-  //   this.hideDialog();
-  // }
-
   myForm: FormGroup;
 
   submitted: boolean = false;
