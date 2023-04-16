@@ -16,7 +16,7 @@ export class FormComponent {
   ngOnInit(): void {
     this.http.get<Post[]>('http://localhost:3000/post').subscribe((posts) => {
       this.posts = posts.filter((post) => post.approved === true);
-      console.log('working', this.posts);
+      // console.log('working', this.posts);
     });
   }
 }

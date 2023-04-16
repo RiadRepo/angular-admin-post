@@ -22,6 +22,7 @@ import { ConfirmationService } from 'primeng/api';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { TableModule } from 'primeng/table';
 import { MessageService } from 'primeng/api';
+import { PostDetailsComponent } from './post-details/post-details.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MessageService } from 'primeng/api';
     NavbarComponent,
     PostComponent,
     PostServiceComponent,
+    PostDetailsComponent,
 
     // ModalComponent,
   ],

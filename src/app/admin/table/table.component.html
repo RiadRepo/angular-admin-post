@@ -6,7 +6,7 @@
       <th>Content</th>
       <th>Approve</th>
       <th>Remove</th>
-      <!-- <th>Edit</th> -->
+      <th>Edit</th>
       <th>Status</th>
     </tr>
   </ng-template>
@@ -33,13 +33,15 @@
           Removed
         </button>
       </td>
-      <!-- <td><button
-        type="button"
-        class="btn btn-sm btn-danger"
-        (click)="editPost(post)"
-      >
-        Edit
-      </button></td> -->
+      <td>
+        <button
+          type="button"
+          class="btn btn-sm btn-danger"
+          (click)="editPost(post)"
+        >
+          Edit
+        </button>
+      </td>
       <td>
         <span *ngIf="post.approved" class="approved">Approved</span>
         <span *ngIf="!post.approved" class="pending">Pending</span>
