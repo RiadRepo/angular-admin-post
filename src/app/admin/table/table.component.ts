@@ -58,7 +58,4 @@ export class TableComponent {
       });
     }
   }
-  editPost(post: Post): void {
-    this.router.navigate(['/post', post.id], { state: { post: post } });
-  }
 }
